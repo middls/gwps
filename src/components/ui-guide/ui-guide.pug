@@ -1,0 +1,9 @@
+include ./helpers/_colors
+mixin ui-guide(data)
+	+b('ui-guide')&attributes(attributes)
+		+e('page-title') UI Kit
+		+e('section')
+			+e('title', {t: 'h2'}) Colors
+			+e('body') 
+				+showColors(colors)
+				

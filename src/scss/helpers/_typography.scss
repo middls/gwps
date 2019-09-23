@@ -1,0 +1,21 @@
+$base-font: 'Lato', sans-serif;
+$addition-font: 'Roboto', sans-serif;
+
+// Base
+$base-bg-color: $white;
+$base-text-color: $secondary;
+$base-loud-color: $attention;
+$base-font-family: $base-font;
+$base-font-size: 1.6em;
+$base-line-height: 1.3;
+$base-vertical-spacing: 24px;
+
+// Headings
+$heading-font-family: $base-font;
+$heading-color: $base-text-color;
+$heading-font-weight: 300;
+
+// Links
+$link-color: $brand-primary;
+$link-hover-color: $brand-primary-hover;
+$link-visited-color: $brand-primary;

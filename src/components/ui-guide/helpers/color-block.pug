@@ -1,0 +1,5 @@
+mixin color-block(data)
+    +b('color-block')&attributes(attributes)
+        +e('box')(style=`background-color: ${data.color}`)
+        +e('color-name')=data.color 
+        +e('var-name')=data.name

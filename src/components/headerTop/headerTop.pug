@@ -1,0 +1,18 @@
+mixin headerTop(data)
+	+b('header-top')&attributes(attributes)
+		.container
+			.row
+				+e('left-side')
+					+e('wrapper', {m: 'flex-end'})
+						+b('img-block')
+							+e('image')(alt="img" src="assets/images/kgs-logo.png" width="77")
+						+e('text', {t: 'span', m: 'start'})= data.kgsText
+				+e('right-side')
+					+e('wrapper')
+						+b('img-block')
+							+e('image')(alt="img" src="assets/images/gazprom-logo.png" width="60")
+						+e('text', {t: 'span', m: 'block'})= data.gazpromTextAnother
+					+e('wrapper')
+						+b('img-block')
+							+e('image')(alt="img" src="assets/images/gazprom-logo.png" width="60")
+						+e('text', {t: 'span', m: 'block'})= data.gazpromText

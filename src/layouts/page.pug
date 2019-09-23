@@ -1,0 +1,23 @@
+include ../../node_modules/bempug/index
+include ../components/javascripts/javascripts
+include ../components/head/head
+- BEMPUG.modifier = '_';
+
+doctype html
+html(lang=config.lang)
+	head
+		-
+			let page = {
+				title: "",
+				class: [],
+				offcanvas: true
+			};
+
+		block head
+		+head({ title: page.title })
+
+	body.page(class=page.class)
+
+		block page
+
+		+javascripts()

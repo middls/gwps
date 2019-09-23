@@ -1,0 +1,9 @@
+mixin sprite()
+	-
+		const name = attributes.name
+		const title = attributes.title
+
+		delete attributes.name
+		delete attributes.title
+
+	+b(`icon-sprite icon-${name}`, {t: 'div'})(role="img" alt=`${title}`)

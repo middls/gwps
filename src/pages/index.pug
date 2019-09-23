@@ -1,0 +1,9 @@
+extends ../layouts/default
+include ../components/header/header
+include  ../components/info/info	
+
+block header
+	+header(header.default)
+
+block main
+	+info()

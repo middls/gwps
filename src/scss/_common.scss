@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $brand-primary;
+    transition: color $basic-interval $easeInOutSine;
+    &:hover {
+        color: $brand-primary-hover;
+    }
+}
+
+body {
+    background-color: $background;
+    font-family: $base-font;
+    font-weight: normal;
+    font-size: $base-font-size;
+    //line-height: $base-line-height;
+}

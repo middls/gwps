@@ -1,0 +1,4 @@
+include ./color-block
+mixin showColors(data)
+    for item in data
+        +color-block({color: item[1], name: item[0]}).ui-guide__color

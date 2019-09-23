@@ -1,0 +1,35 @@
+@import "./helpers/color-block";
+
+.ui-guide {
+	overflow-x: hidden;
+	&__page-title {
+		font-size: 100px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	&__section {
+		display: flex;
+		align-items: stretch;
+		width: 100vw;
+	} 
+
+	&__title {
+		flex-basis: 300px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		padding-left: 50px;
+	}
+
+	&__body {
+		border-left: 1px solid #999;
+		padding: 30px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__color {
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+}

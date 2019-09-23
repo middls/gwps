@@ -1,0 +1,414 @@
+[
+    {
+        "title": "Colors",
+        "items": [
+            {
+                "key": "$white",
+                "value": "#ffffff"
+            },
+            {
+                "key": "$black",
+                "value": "#000000"
+            },
+            {
+                "key": "$primary",
+                "value": "#000"
+            },
+            {
+                "key": "$primary-hover",
+                "value": "#000"
+            },
+            {
+                "key": "$primary-active",
+                "value": "#000"
+            },
+            {
+                "key": "$secondary",
+                "value": "#999"
+            },
+            {
+                "key": "$secondary-hover",
+                "value": "#999"
+            },
+            {
+                "key": "$secondary-active",
+                "value": "#999"
+            },
+            {
+                "key": "$brand-primary",
+                "value": "#f00"
+            },
+            {
+                "key": "$brand-primary-hover",
+                "value": "#d00"
+            },
+            {
+                "key": "$brand-primary-active",
+                "value": "#e00"
+            },
+            {
+                "key": "$brand-secondary",
+                "value": "#f00"
+            },
+            {
+                "key": "$brand-secondary-hover",
+                "value": "#d00"
+            },
+            {
+                "key": "$brand-secondary-active",
+                "value": "#e00"
+            },
+            {
+                "key": "$accent",
+                "value": "#7CFC00"
+            },
+            {
+                "key": "$attention",
+                "value": "#FF4500"
+            },
+            {
+                "key": "$alarm",
+                "value": "#DC143C"
+            },
+            {
+                "key": "$prevention",
+                "value": "#6A5ACD"
+            },
+            {
+                "key": "$lightsalmon",
+                "value": "#FFA07A"
+            },
+            {
+                "key": "$salmon",
+                "value": "#FA8072"
+            },
+            {
+                "key": "$darksalmon",
+                "value": "#E9967A"
+            },
+            {
+                "key": "$lightcoral",
+                "value": "#F08080"
+            },
+            {
+                "key": "$indianred",
+                "value": "#CD5C5C"
+            },
+            {
+                "key": "$firebrick",
+                "value": "#B22222"
+            },
+            {
+                "key": "$red",
+                "value": "#FF0000"
+            },
+            {
+                "key": "$darkred",
+                "value": "#8B0000"
+            },
+            {
+                "key": "$coral",
+                "value": "#FF7F50"
+            },
+            {
+                "key": "$tomato",
+                "value": "#FF6347"
+            },
+            {
+                "key": "$gold",
+                "value": "#FFD700"
+            },
+            {
+                "key": "$orange",
+                "value": "#FFA500"
+            },
+            {
+                "key": "$darkorange",
+                "value": "#FF8C00"
+            },
+            {
+                "key": "$palegreen",
+                "value": "#98FB98"
+            },
+            {
+                "key": "$teal",
+                "value": "#008080"
+            }
+        ]
+    },
+    {
+        "title": "Animation",
+        "items": [
+            {
+                "key": "$basic-interval",
+                "value": "250ms"
+            },
+            {
+                "key": "$easeInSine",
+                "value": "cubic-bezier(0.47, 0, 0.745, 0.715)"
+            },
+            {
+                "key": "$easeOutSine",
+                "value": "cubic-bezier(0.39, 0.575, 0.565, 1)"
+            },
+            {
+                "key": "$easeInOutSine",
+                "value": "cubic-bezier(0.445, 0.05, 0.55, 0.95)"
+            },
+            {
+                "key": "$easeInQuad",
+                "value": "cubic-bezier(0.55, 0.085, 0.68, 0.53)"
+            },
+            {
+                "key": "$easeOutQuad",
+                "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+            },
+            {
+                "key": "$easeInOutQuad",
+                "value": "cubic-bezier(0.455, 0.03, 0.515, 0.955)"
+            },
+            {
+                "key": "$easeInCubic",
+                "value": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+            },
+            {
+                "key": "$easeOutCubic",
+                "value": "cubic-bezier(0.215, 0.61, 0.355, 1)"
+            },
+            {
+                "key": "$easeInOutCubic",
+                "value": "cubic-bezier(0.645, 0.045, 0.355, 1)"
+            },
+            {
+                "key": "$easeInQuart",
+                "value": "cubic-bezier(0.895, 0.03, 0.685, 0.22)"
+            },
+            {
+                "key": "$easeOutQuart",
+                "value": "cubic-bezier(0.165, 0.84, 0.44, 1)"
+            },
+            {
+                "key": "$easeInOutQuart",
+                "value": "cubic-bezier(0.77, 0, 0.175, 1)"
+            },
+            {
+                "key": "$easeInQuint",
+                "value": "cubic-bezier(0.755, 0.05, 0.855, 0.06)"
+            },
+            {
+                "key": "$easeOutQuint",
+                "value": "cubic-bezier(0.23, 1, 0.32, 1)"
+            },
+            {
+                "key": "$easeInOutQuint",
+                "value": "cubic-bezier(0.86, 0, 0.07, 1)"
+            },
+            {
+                "key": "$easeInExpo",
+                "value": "cubic-bezier(0.95, 0.05, 0.795, 0.035)"
+            },
+            {
+                "key": "$easeOutExpo",
+                "value": "cubic-bezier(0.19, 1, 0.22, 1)"
+            },
+            {
+                "key": "$easeInOutExpo",
+                "value": "cubic-bezier(1, 0, 0, 1)"
+            },
+            {
+                "key": "$easeInCirc",
+                "value": "cubic-bezier(0.6, 0.04, 0.98, 0.335)"
+            },
+            {
+                "key": "$easeOutCirc",
+                "value": "cubic-bezier(0.075, 0.82, 0.165, 1)"
+            },
+            {
+                "key": "$easeInOutCirc",
+                "value": "cubic-bezier(0.785, 0.135, 0.15, 0.86)"
+            },
+            {
+                "key": "$easeInBack",
+                "value": "cubic-bezier(0.6, -0.28, 0.735, 0.045)"
+            },
+            {
+                "key": "$easeOutBack",
+                "value": "cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+            },
+            {
+                "key": "$easeInOutBack",
+                "value": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+            }
+        ]
+    },
+    {
+        "title": "Typography",
+        "items": [
+            {
+                "key": "$base-font",
+                "value": "\"Roboto\", Arial, \"Helvetica Neue\", Helvetica, sans-serif"
+            },
+            {
+                "key": "$base-bg-color",
+                "value": "$white"
+            },
+            {
+                "key": "$base-text-color",
+                "value": "$secondary"
+            },
+            {
+                "key": "$base-loud-color",
+                "value": "$attention"
+            },
+            {
+                "key": "$base-font-family",
+                "value": "$base-font"
+            },
+            {
+                "key": "$base-font-size",
+                "value": "1.6em"
+            },
+            {
+                "key": "$base-line-height",
+                "value": "1.8125"
+            },
+            {
+                "key": "$base-vertical-spacing",
+                "value": "24px"
+            },
+            {
+                "key": "$heading-font-family",
+                "value": "$base-font"
+            },
+            {
+                "key": "$heading-color",
+                "value": "$base-text-color"
+            },
+            {
+                "key": "$heading-font-weight",
+                "value": "300"
+            },
+            {
+                "key": "$link-color",
+                "value": "$brand-primary"
+            },
+            {
+                "key": "$link-hover-color",
+                "value": "$brand-primary-hover"
+            },
+            {
+                "key": "$link-visited-color",
+                "value": "$brand-primary"
+            }
+        ]
+    },
+    {
+        "title": "Grid",
+        "items": [
+            {
+                "key": "$columns",
+                "value": "12"
+            },
+            {
+                "key": "$atom",
+                "value": "(100% / $columns)"
+            },
+            {
+                "key": "$container",
+                "value": "1248px"
+            },
+            {
+                "key": "$break_hd",
+                "value": "1920px"
+            },
+            {
+                "key": "$break_xl",
+                "value": "1440px"
+            },
+            {
+                "key": "$break_lg",
+                "value": "1280px"
+            },
+            {
+                "key": "$break_md",
+                "value": "1024px"
+            },
+            {
+                "key": "$break_sm",
+                "value": "768px"
+            },
+            {
+                "key": "$offset_hd",
+                "value": "36px"
+            },
+            {
+                "key": "$offset_xl",
+                "value": "36px"
+            },
+            {
+                "key": "$offset_lg",
+                "value": "36px"
+            },
+            {
+                "key": "$offset_md",
+                "value": "64px"
+            },
+            {
+                "key": "$offset_sm",
+                "value": "60px"
+            },
+            {
+                "key": "$offset_xs",
+                "value": "20px"
+            },
+            {
+                "key": "$offset_hd_one_side",
+                "value": "($offset_hd / 2)"
+            },
+            {
+                "key": "$offset_xl_one_side",
+                "value": "($offset_xl / 2)"
+            },
+            {
+                "key": "$offset_lg_one_side",
+                "value": "($offset_lg / 2)"
+            },
+            {
+                "key": "$offset_md_one_side",
+                "value": "($offset_md / 2)"
+            },
+            {
+                "key": "$offset_sm_one_side",
+                "value": "($offset_sm / 2)"
+            },
+            {
+                "key": "$offset_xs_one_side",
+                "value": "($offset_xs / 2)"
+            },
+            {
+                "key": "$fields",
+                "value": "18px"
+            },
+            {
+                "key": "$fields_xl",
+                "value": "18px"
+            },
+            {
+                "key": "$fields_lg",
+                "value": "18px"
+            },
+            {
+                "key": "$fields_md",
+                "value": "32px"
+            },
+            {
+                "key": "$fields_sm",
+                "value": "30px"
+            },
+            {
+                "key": "$fields_xs",
+                "value": "10px"
+            }
+        ]
+    }
+]

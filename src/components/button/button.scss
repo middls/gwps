@@ -1,0 +1,53 @@
+.button {
+	overflow: hidden;
+	position: absolute;
+
+	//top: 50%;
+	//right: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	input {
+		display: flex;
+		width: 40px;
+		height: 30px;
+		position: absolute;
+		cursor: pointer;
+		opacity: 0;
+		z-index: 1;
+	}
+	.button__line {
+		width: 40px;
+		height: 5px;
+		margin-bottom: 10px;
+		background: $white;
+		border-radius: 0;
+		-webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+		-moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+		-ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+		-o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+		transition: all .5s cubic-bezier(.08,.81,.87,.71);
+	}
+	.line-1 {
+		transform-origin: 4px 0px;
+	}
+
+	.line-3 {
+		transform-origin: bottom right;
+	}
+}
+
+.button input:checked ~ .line-1 {
+	background-color: $white;
+	transform: rotate(45deg) translate(8px);
+}
+.button input:checked ~ .line-2{
+	background-color:  $white;
+	transform: rotate(495deg) translate(2px);
+}
+.button input:checked ~ .line-3 {
+	background-color:  $white;
+	transform: rotate(45deg);
+	opacity: 0;
+}

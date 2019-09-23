@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Настройки</title><script src="https://code.jquery.com/jquery-1.12.4.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;display=swap" rel="stylesheet">
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.settings__title {
+  padding: 40px 0;
+  font-size: 24px;
+}
+
+.settings__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.settings__name {
+    font-size: 14px;
+    color: #999;
+}
+
+.settings__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  flex-basis: 18%;
+}
+
+.settings input {
+  width: 100%;
+  padding: 5px;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="settings" data-bind="foreach: globSettings">
+        <div class="settings__group">
+          <div class="settings__title" data-bind="text: title"></div>
+          <div class="settings__list" data-bind="foreach: items">
+            <div class="settings__item">
+              <div class="settings__name" data-bind="text: key"></div>
+              <div class="settings__value"> <input name="light" type="text" value="#ffffff" data-bind="value: value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>Save</button>
+    </div><script>var globSettings = ko.observableArray([]);
+function getSettings() {
+    $.getJSON('/api/settings') 
+    .success(function(data) {
+        globSettings(data);
+    })
+}
+ko.applyBindings(new getSettings());</script>
+  </body>
+</html>

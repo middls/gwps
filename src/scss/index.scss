@@ -1,0 +1,22 @@
+@import "./helpers/*.scss";
+
+// Svg icons
+// Закоментировать при отсутствии иконок в папке icons
+//@import "../../tmp/icons-template.scss";
+
+// Png sprites
+// Закоментировать при отсутствии иконок в папке sprites
+//@import "../../tmp/sprite.scss";
+
+//Fonts
+@import "_fonts.scss";
+
+// Plugins
+// @import 'plugin-name/plugin-style.css'
+// @import 'plugin-name/plugin-style.scss'
+
+//Components styles
+@import "../components/**/!(_)*.scss";
+
+//Styles
+@import "_common.scss";

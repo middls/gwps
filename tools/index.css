@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.group__title {
+  padding: 40px 0;
+  font-size: 24px;
+}
+
+.group__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.group__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.group input {
+  max-width: 70px;
+  padding: 5px;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}

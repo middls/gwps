@@ -1,0 +1,29 @@
+include ../../node_modules/bempug/index
+doctype html
+html
+    head
+        title Настройки
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js")
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="assets/css/index.css")
+    body
+        +b('container')
+            +b('settings')(data-bind="foreach: globSettings")
+                +e('group')
+                    +e('title')(data-bind="text: title")
+                    +e('list')(data-bind="foreach: items")
+                        +e('item') 
+                            +e('name')(data-bind="text: key")
+                            +e('value') 
+                                input(type="text" name="light" value="#ffffff" data-bind="value: value")
+
+        script.
+            var globSettings = ko.observableArray([]);
+            function getSettings() {
+                $.getJSON('/api/settings') 
+                .success(function(data) {
+                    globSettings(data);
+                })
+            }
+            ko.applyBindings(new getSettings());

@@ -1,0 +1,8 @@
+---
+  config:
+    projectName: KGS
+    lang: ru
+    path: 
+      styles: assets/css
+      scripts: assets/js 
+      images: assets/images

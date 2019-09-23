@@ -1,0 +1,7 @@
+mixin info(data)
+	+b('info', {t: 'section'})&attributes(attributes)
+		.container
+			.row
+				+e('content')
+					+e('img-block')
+						+e('image')(alt="img" src="assets/images/content/info-img-1.jpg")

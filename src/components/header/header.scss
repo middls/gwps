@@ -1,0 +1,46 @@
+.header {
+	height: 100vh;
+	position: relative;
+	&::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+		background: url("../images/content/header-bg.png") no-repeat;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+
+	}
+	.padding-top {
+		padding-top: 410px;
+	}
+	.flex-end {
+		justify-content: flex-end;
+	}
+	.row {
+		display: flex;
+		.header__block-content_first {
+			max-width: 230px;
+		}
+		.header__block-content_second {
+			max-width: 310px;
+		}
+		.header__block-content{
+			.header__title {
+				font-size: 46px;
+				color: $white;
+				text-transform: uppercase;
+				margin-top: 0;
+				margin-bottom: 14px;
+			}
+			.header__description {
+				font-size: 15px;
+				color: $white;
+				text-transform: lowercase;
+				margin-top: 0;
+				line-height: 1.2;
+			}
+		}
+	}
+}

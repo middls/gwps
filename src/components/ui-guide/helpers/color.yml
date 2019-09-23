@@ -1,0 +1,71 @@
+colors:
+  - - $white
+    - '#ffffff'
+  - - $black
+    - '#000000'
+  - - $background
+    - '#E5E5E5'
+  - - $header-bg
+    - '#F6F8FA'
+  - - $primary
+    - '#354052'
+  - - $primary-hover
+    - '#354052'
+  - - $primary-active
+    - '#354052'
+  - - $secondary
+    - '#EAEEF4'
+  - - $secondary-hover
+    - '#D1DAE3'
+  - - $secondary-active
+    - '#D1DAE3'
+  - - $brand-primary
+    - '#00ABB7'
+  - - $brand-primary-hover
+    - '#0099B7'
+  - - $brand-primary-active
+    - '#00ABB7'
+  - - $description
+    - '#697993'
+  - - $accent
+    - '#E4003A'
+  - - $attention
+    - '#FF4500'
+  - - $alarm
+    - '#DC143C'
+  - - $dark-blue
+    - '#003767'
+  - - $blue
+    - '#005F9B'
+  - - $prevention
+    - '#814A84'
+  - - $lightsalmon
+    - '#FFA07A'
+  - - $salmon
+    - '#F08468'
+  - - $darksalmon
+    - '#E9967A'
+  - - $lightcoral
+    - '#F08080'
+  - - $indianred
+    - '#CD5C5C'
+  - - $firebrick
+    - '#B22222'
+  - - $red
+    - '#FF0000'
+  - - $darkred
+    - '#8B0000'
+  - - $coral
+    - '#FF7F50'
+  - - $tomato
+    - '#FF6347'
+  - - $gold
+    - '#FFCD1C'
+  - - $orange
+    - '#F6A253'
+  - - $darkorange
+    - '#EF7900'
+  - - $palegreen
+    - '#62B22F'
+  - - $teal
+    - '#008080'

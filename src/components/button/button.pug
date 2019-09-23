@@ -1,0 +1,6 @@
+mixin button(data)
+	+b('button')&attributes(attributes)
+		input(type="checkbox")
+		- for (let i = 1; i < 4; i++)
+				span(class='button__line' class='line-' + i)
+		
