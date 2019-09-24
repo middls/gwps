@@ -1,3 +1,23 @@
 .autonomy {
-	// 
+	&__wrapper {
+		@include container();
+		.autonomy__inner{
+			display: flex;
+			.autonomy__title-block {
+				@include col-padding();
+				@include size(6);
+				.autonomy__title {
+					color: $white;
+					font-size: 56px;
+					margin-top: 0;
+					margin-bottom: 30px;
+				}
+				.autonomy__description {
+					color: $white;
+					font-size: 16px;
+					margin: 0;
+				}
+			}
+		}
+	}
 }

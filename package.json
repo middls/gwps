@@ -66,7 +66,7 @@
     "gulp-svg-symbols": "^3.2.3",
     "gulp-yaml": "^2.0.4",
     "gulp-zip": "^5.0.0",
-    "gulp.spritesmith": "^6.10.1",
+    "gulp.spritesmith": "^6.11.0",
     "gulplog": "^1.0.0",
     "happypack": "^5.0.1",
     "imagemin-jpeg-recompress": "^6.0.0",

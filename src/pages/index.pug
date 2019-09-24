@@ -1,9 +1,11 @@
 extends ../layouts/default
 include ../components/header/header
-include  ../components/info/info	
+include  ../components/info/info
+include ../components/autonomy/autonomy	
 
 block header
 	+header(header.default)
 
 block main
 	+info()
+	+autonomy(autonomy.default)

@@ -1,2 +1,7 @@
 mixin autonomy(data)
-	+b('autonomy')&attributes(attributes)
+	+b('autonomy', {t: 'section'})&attributes(attributes)
+		+e('wrapper')
+			+e('inner')
+				+e('title-block')
+					+e('title', {t: 'h3'})= data.title
+					+e('description', {t: 'p'})= data.description
