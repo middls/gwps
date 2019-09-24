@@ -1,13 +1,16 @@
 import Plugin from "@/scripts/core/Plugin";
 import init from "@/scripts/core/init";
-import Vue from 'vue';
-import VueAwesomeSwiper from 'vue-awesome-swiper'
 
-export default {
-  components: {
-    swiper,
-    swiperSlide
+class Autonomy extends Plugin {
+  defaults() {
+    return {};
   }
+
+  init() {}
+
+  buildCache() {}
+
+  bindEvents() {}
 }
 
 export default init(Autonomy, "autonomy");
