@@ -6,39 +6,31 @@ import Swiper from "swiper";
 class Autonomy extends Plugin {
   defaults() {
     return {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-
+        sliderSettings: {
+          pagination: {
+            el:'.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+           scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+          },
+        }
     };
   }
 
   init() {
-
+  this.mySwiper = new Swiper('.swiper-container', this.options.sliderSettings);
   }
 
-  buildCache() {
-     this.mySwiper = new Swiper()
-  }
-
+  buildCache() {}
 
   bindEvents() {}
+
 }
 
 export default init(Autonomy, "autonomy");

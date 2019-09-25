@@ -1,16 +1,19 @@
 mixin autonomy(data)
-    +b('autonomy', {t: 'section'})&attributes(attributes)
-        +e('wrapper')
-            +e('inner')
-                +e('title-block')
-                    +e('title', {t: 'h3'})= data.title
-                    +e('description', {t: 'p'})= data.description
-            +b('slider-container')
-                +b('slider-wrapper')
-                    +b('swipper-slide') Slide 1
-                    +b('swipper-slide') Slide 1
-                    +b('swipper-slide') Slide 1
-                +b('swipper-pagination')
+	+b('autonomy', {t: 'section'})&attributes(attributes)
+		+e('wrapper')
+			+e('inner')
+				+e('title-block')
+					+e('title', {t: 'h3'})= data.title
+					+e('description', {t: 'p'})= data.description
+			+b('swiper-container')
+				+b('swiper-wrapper')
+					+b('swiper-slide') Slide 1
+					+b('swiper-slide') Slide 2
+					+b('swiper-slide') Slide 3
+				+b('swiper-button-prev')
+				+b('swiper-button-next')
+				+b('swiper-pagination')
+				+b('swiper-scrollbar')
 
 
 
