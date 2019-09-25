@@ -1,4 +1,4 @@
-import deepMerge from "@/scripts/helpers/deepMerge";
+import deepMerge from "@/js/helpers/deepMerge";
 import EventsBus from "./EventsBus";
 
 const events = new EventsBus();

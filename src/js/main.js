@@ -2,11 +2,11 @@ import * as serviceWorker from "./tools/serviceWorker";
 import ready from "./tools/dom/ready";
 
 // Import Components
-
+import Autonomy from "../components/autonomy/autonomy";
 // Factories class based plugins
 // Example
 // Accordion(".accordion");
-
+Autonomy(".autonomy");
 // Simple functional plugins
 // Example
 // Demo();

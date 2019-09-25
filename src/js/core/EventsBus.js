@@ -1,4 +1,4 @@
-import { isArray } from "@/scripts/helpers/is";
+import { isArray } from "@/js/helpers/is";
 
 export default class EventsBus {
   /**

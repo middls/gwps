@@ -22,7 +22,7 @@ let options = {
     resolve: {
         modules: ["node_modules", path.join(__dirname, "src")],
         alias: {
-            "@": path.resolve(__dirname, "scr")
+            "@": path.resolve(__dirname, "src")
         }
     },
     devtool: isDevelopment ? "eval-source-map" : "source-map",

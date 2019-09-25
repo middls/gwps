@@ -1,5 +1,5 @@
-import Plugin from "@/scripts/core/Plugin";
-import init from "@/scripts/core/init";
+import Plugin from "@/js/core/Plugin";
+import init from "@/js/core/init";
 
 class #{blockname.pascalCase} extends Plugin {
   defaults() {

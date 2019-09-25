@@ -4,8 +4,8 @@ import {
   isArray,
   isUndefined,
   isNull
-} from "@/scripts/helpers/is";
-import toArray from "@/scripts/helpers/dom/toArray";
+} from "@/js/helpers/is";
+import toArray from "@/js/helpers/dom/toArray";
 
 export default (Plugin, name = "plugin") => {
   return (_selectors, options = {}) => {
