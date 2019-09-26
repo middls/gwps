@@ -1,0 +1,42 @@
+mixin slider(data)
+    +b('slider')&attributes(attributes)
+        +b('swiper-container')
+            +b('swiper-wrapper')
+                +b('swiper-slide')
+                    +e('image-content')
+                        +e('image')(alt='img' src="assets/images/content/slider-image.jpg")
+                    +e('text-content')
+                        +e('up-block')
+                            +e('title', {t: 'h3'}) Линейное строительство
+                            +e('description', {t: 'span'}) Приручаем сложнейшие рельефы
+                        +e('down-block')
+                            span Проложено
+                            span 100500 км
+                            span линий труб
+                            +e('arrow-right', {t: 'a'})(href="#")
+                +b('swiper-slide')
+                    +e('image-content')
+                        +e('image')(alt='img' src="assets/images/content/slider-image.jpg")
+                    +e('text-content')
+                        +e('up-block')
+                            +e('title', {t: 'h3'}) Линейное строительство
+                            +e('description', {t: 'span'}) Приручаем сложнейшие рельефы
+                        +e('down-block')
+                            span Проложено
+                            span 100500 км
+                            span линий труб
+                            +e('arrow-right', {t: 'a'})(href="#")
+                +b('swiper-slide')
+                    +e('image-content')
+                        +e('image')(alt='img' src="assets/images/content/slider-image.jpg")
+                    +e('text-content')
+                        +e('up-block')
+                            +e('title', {t: 'h3'}) Линейное строительство
+                            +e('description', {t: 'span'}) Приручаем сложнейшие рельефы
+                        +e('down-block')
+                            span Проложено
+                            span 100500 км
+                            span линий труб
+                            +e('arrow-right', {t: 'a'})(href="#")
+            +b('swiper-pagination')
+            +b('swiper-scrollbar')
