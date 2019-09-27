@@ -1,84 +1,117 @@
 .slider {
 
-.swiper-container {
-      @include col();
-      height: 600px;
-      max-width: 975px;
-      .swiper-wrapper {
-          @include row-flex();
-          flex-wrap: nowrap;
-      }
-      .swiper-slide {
-          @include col-padding();
-          @include size(10);
-          position: relative;
-          .swiper-slide__image-content {
-              @include size(11);
-              position: relative;
-              padding-top: 56.25%;
-              overflow: hidden;
-              .swiper-slide__image {
-                  position: absolute;
-                  left: 0;
-                  top: 0;
-                  width: 100%;
-                  height: auto;
-              }
-          }
-          .swiper-slide__text-content {
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              background-color: #fff;
-              padding: 50px 60px;
-              padding-bottom: 84px;
-              max-width: 370px;
-              position: absolute;
-              top: 10%;
-              right: 0;
-              .swiper-slide__up-block {
-                  color: #005F9B;
-                  .swiper-slide__title {
-                      font-size: 36px;
-                      font-weight: 800;
-                      margin: 0;
-                  }
-                  .swiper-slide__description {
-                      font-size: 15px;
-                  }
-              }
-              .swiper-slide__down-block {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  margin-top: 30px;
-                  span {
-                      color: #005F9B;
-                      font-size: 15px;
-                      &:nth-child(2) {
-                          font-size: 48px;
-                          font-weight: 800;
-                      }
-                  }
-              }
-              .swiper-slide__arrow-right {
-                  display: block;
-                  position: relative;
-                  max-width: 80px;
-                  margin-top: 30px;
+  .swiper-container {
+    @include col();
+    height: 600px;
+    max-width: 975px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-                  &::before {
-                      content: '';
-                      position: absolute;
-                      top: 0;
-                      right: 0;
-                      width: 80px;
-                      height: 30px;
-                      background: url('../images/arrow-right-slider.png') no-repeat 50% 50%;
-                      background-size: cover;
-                  }
-              }
-          }
+    .swiper-wrapper {
+      @include row-flex();
+      flex-wrap: nowrap;
+    }
+
+    .swiper-slide {
+      @include col-padding();
+      @include size(10);
+      position: relative;
+
+      .swiper-slide__image-content {
+        @include size(11);
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+
+        .swiper-slide__image {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: auto;
+        }
       }
+
+      .swiper-slide__text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #fff;
+        padding: 50px 60px;
+        padding-bottom: 84px;
+        max-width: 370px;
+        position: absolute;
+        top: 10%;
+        right: 0;
+
+        .swiper-slide__up-block {
+          color: #005F9B;
+
+          .swiper-slide__title {
+            font-size: 36px;
+            font-weight: 800;
+            margin: 0;
+          }
+
+          .swiper-slide__description {
+            font-size: 15px;
+          }
+        }
+
+        .swiper-slide__down-block {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 30px;
+
+          span {
+            color: #005F9B;
+            font-size: 15px;
+
+            &:nth-child(2) {
+              font-size: 48px;
+              font-weight: 800;
+            }
+          }
+        }
+
+        .swiper-slide__arrow-right {
+          display: block;
+          position: relative;
+          max-width: 80px;
+          margin-top: 30px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 30px;
+            background: url('../images/arrow-right-slider.png') no-repeat 50% 50%;
+            background-size: cover;
+          }
+        }
+      }
+    }
+
+    .swiper-scrollbar {
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      z-index: 50;
+      width: 98%;
+      height: 2px;
+      background-color: $white;
+
+      .swiper-scrollbar-drag {
+        height: 10px;
+        border-radius: 0;
+        background-color: #fff;
+      }
+    }
   }
 }

@@ -1,0 +1,20 @@
+mixin responsibility(data)
+    +b('responsibility', {t: 'section'})&attributes(attributes)
+        +e('wrapper')
+            +e('inner')
+                +e('title-block')
+                    +e('title', {t: 'h3'})= data.title
+                    +e('description', {t: 'p'})= data.description
+                +e('blocks')
+                    +e('content-block')
+                        +e('icon', {m: 'first-icon'})
+                        +e('title-content-block', {t: 'span'}) охрана труда
+                        +e('description-content-block', {t: 'span'}) Разработали систему управления рисками на рабочих местах
+                    +e('content-block')
+                        +e('icon', {m: 'second-icon'})
+                        +e('title-content-block', {t: 'span'}) экологическая безопастность
+                        +e('description-content-block', {t: 'span'}) Создали свою  экоаналитическую лабораторию для анализа окружающей среды
+                    +e('content-block')
+                        +e('icon', {m: 'third-icon'})
+                        +e('title-content-block', {t: 'span'}) контроль качества
+                        +e('description-content-block', {t: 'span'})  Проводим входной, лабораторный, пооперационный и приемочный контроль

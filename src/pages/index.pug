@@ -1,7 +1,10 @@
 extends ../layouts/default
 include ../components/header/header
 include  ../components/info/info
-include ../components/autonomy/autonomy	
+include ../components/autonomy/autonomy
+include ../components/objects/objects
+include ../components/responsibility/responsibility
+include ../components/responsibility-white/responsibility-white
 
 block header
 	+header(header.default)
@@ -9,3 +12,7 @@ block header
 block main
 	+info()
 	+autonomy(autonomy.default)
+	+objects(objects.default)
+	+responsibility(responsibility.default)
+block white-main
+	+responsibility-white()
