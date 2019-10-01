@@ -1,4 +1,88 @@
 .responsibility-white {
   background-color: #fff;
 
+  &__wrapper {
+    @include container();
+    display: flex;
+    justify-content: center;
+    //top: -116px;
+    //position: relative;
+
+    .responsibility-white__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .responsibility-white__content {
+        margin-bottom: 70px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        @include col-padding();
+        @include size(8);
+        .responsibility-white__image-block_left {
+          left: 40px;
+        }
+        .responsibility-white__image-block_right {
+          right: 0;
+        }
+        .responsibility-white__image-block {
+          position: absolute;
+          top: -65px;
+          @include size(6);
+          max-width: 375px;
+
+          .responsibility-white__cont {
+            padding-top: 67.25%;
+            position: relative;
+            overflow: hidden;
+
+            .responsibility-white__image {
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+
+        .responsibility-white__text-content {
+          @include col-padding();
+          @include size(7);
+          background-color: #f6f8fa;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 60px 0;
+
+          .responsibility-white__title {
+            @include col();
+            @include size(7);
+            margin-top: 0;
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+          }
+
+          .responsibility-white__description {
+            @include col();
+            @include size(7);
+            margin: 0;
+            color: #000;
+            font-size: 15px;
+          }
+        }
+      }
+      .responsibility-white__content_flex-start {
+        justify-content: flex-start;
+        .responsibility-white__text-content {
+          margin-left: 42px;
+        }
+      }
+    }
+  }
 }

@@ -1,2 +1,25 @@
 mixin responsibility-white(data)
-	+b('responsibility-white')&attributes(attributes)
+    +b('responsibility-white', {t: 'section'})&attributes(attributes)
+        +e('wrapper')
+            +e('inner')
+                +e('content')
+                    +e('image-block', {m: 'left'})
+                        +e('cont')
+                            +e('image')(alt="img" src="assets/images/content/white.png")
+                    +e('text-content')
+                        +e('title', {t: 'h3'})= data.firstBlock.title
+                        +e('description', {t: 'p'})= data.firstBlock.description
+                +e('content', {m: 'flex-start'})
+                    +e('image-block', {m: 'right'})
+                        +e('cont')
+                            +e('image')(alt="img" src="assets/images/content/white-1.png")
+                    +e('text-content')
+                        +e('title', {t: 'h3'})= data.firstBlock.title
+                        +e('description', {t: 'p'})= data.firstBlock.description
+                +e('content')
+                    +e('image-block', {m: 'left'})
+                        +e('cont')
+                            +e('image')(alt="img" src="assets/images/content/white-2.png")
+                    +e('text-content')
+                        +e('title', {t: 'h3'})= data.firstBlock.title
+                        +e('description', {t: 'p'})= data.firstBlock.description
