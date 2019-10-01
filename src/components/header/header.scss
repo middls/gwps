@@ -2,6 +2,9 @@
 	$self: &;
 	position: relative;
 	height: 100vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 	&::before {
         content: '';
         position: absolute;
@@ -15,10 +18,8 @@
 	}
 	&__wrapper {
 		@include container();
-		margin-top: 400px;
 		& #{$self}__inner {
 			display: flex;
-			@include row-flex();
 			& #{$self}__content {
 				@include col-padding();
 				@include size(4);
