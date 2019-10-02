@@ -5,6 +5,10 @@ mixin news(data)
                 +e('title-block')
                     +e('title', {t: 'h3'})= data.title
                     +e('description', {t: 'p'})= data.description
+                +e('arrow-right')
+                    span Пресс-центр
+                    .arrow-black
+                        +e('arrow-bl', {t: 'image'})(src="assets/images/arrow-right2.png")
             +e('blocks-news')
                 +e('news')
                     +e('image-block')

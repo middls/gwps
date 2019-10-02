@@ -1,29 +1,33 @@
 mixin objects(data)
-	+b('objects', {t: 'section'})&attributes(attributes)
-		+e('wrapper')
-			+e('inner')
-				+e('title-block')
-					+e('title', {t: 'h3'})= data.title
-					+e('description', {t: 'p'})= data.description
-		+e('full-wrapper')
-			+e('object-content')
-				+e('text')
-					span Капитальный ремонт участка газопровода "Петровск-Новопсков"
-					+e('down-text')
-						span Заказчик:
-						span ЗАО "Ямалгазинвест"
-						span Сдан: 24 ноября 2007
-			+e('object-content')
-				+e('text')
-					span Расширение ЕСГ Для подачи газа в газопровод "Южный поток"
-					+e('down-text')
-						span Заказчик:
-						span ЗАО "Ямалгазинвест"
-						span Сдан: 24 ноября 2007
-			+e('object-content')
-				+e('text')
-					span Магистральный газопровод "Сила Сибири"
-					+e('down-text')
-						span Заказчик:
-						span ЗАО "Ямалгазинвест"
-						span Сдан: 24 ноября 2007
+    +b('objects', {t: 'section'})&attributes(attributes)
+        +e('wrapper')
+            +e('inner')
+                +e('title-block')
+                    +e('title', {t: 'h3'})= data.title
+                    +e('description', {t: 'p'})= data.description
+                +e('arrow-right')
+                    span Пресс-центр
+                    .arrow-black
+                        +e('arrow-bl', {t: 'image'})(src="assets/images/arrow-right1.png")
+        +e('full-wrapper')
+            +e('object-content')
+                +e('text')
+                    span Капитальный ремонт участка газопровода "Петровск-Новопсков"
+                    +e('down-text')
+                        span Заказчик:
+                        span ЗАО "Ямалгазинвест"
+                        span Сдан: 24 ноября 2007
+            +e('object-content')
+                +e('text')
+                    span Расширение ЕСГ Для подачи газа в газопровод "Южный поток"
+                    +e('down-text')
+                        span Заказчик:
+                        span ЗАО "Ямалгазинвест"
+                        span Сдан: 24 ноября 2007
+            +e('object-content')
+                +e('text')
+                    span Магистральный газопровод "Сила Сибири"
+                    +e('down-text')
+                        span Заказчик:
+                        span ЗАО "Ямалгазинвест"
+                        span Сдан: 24 ноября 2007
