@@ -6,6 +6,7 @@
     .responsibility__inner {
       display: flex;
       flex-direction: column;
+      padding-left: 145px;
 
       .responsibility__title-block {
         @include col-padding();

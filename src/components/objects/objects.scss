@@ -5,6 +5,7 @@
 
     .objects__inner {
       display: flex;
+      padding-left: 145px;
 
       .objects__title-block {
         @include col-padding();
@@ -87,7 +88,7 @@
         span {
           display: block;
           color: $white;
-          font-size: 24px;
+          font-size: 18px;
         }
 
         .objects__down-text {
@@ -95,7 +96,7 @@
           flex-direction: column;
 
           span {
-            font-size: 15px;
+            font-size: 13px;
             line-height: 1.5;
           }
         }

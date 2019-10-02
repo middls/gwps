@@ -3,6 +3,7 @@
 		@include container();
 		.autonomy__inner{
 			display: flex;
+			padding-left: 145px;
 			.autonomy__title-block {
 				@include col-padding();
 				@include size(6);

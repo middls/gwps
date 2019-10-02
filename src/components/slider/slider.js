@@ -31,13 +31,13 @@ class Slider extends Plugin {
     bindEvents() {
     }
 
-    changePaddingLeft() {
-        // let sliderBlock = document.querySelector('.slider');
-        // let headerWrapper = document.querySelector('.header__wrapper');
-        // let containerWidth = headerWrapper.offsetWidth;
-        //
-        // sliderBlock.style.paddingLeft = ((window.innerWidth - containerWidth) / 2) + 'px';
-    }
+    // changePaddingLeft() {
+    //     let sliderBlock = document.querySelector('.slider');
+    //     let headerWrapper = document.querySelector('.header__wrapper');
+    //     let containerWidth = headerWrapper.offsetWidth;
+    //
+    //     sliderBlock.style.paddingLeft = ((window.innerWidth - containerWidth) / 2) + 'px';
+    // }
 }
 
 export default init(Slider, "slider");

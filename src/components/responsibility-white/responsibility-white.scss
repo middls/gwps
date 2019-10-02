@@ -1,31 +1,34 @@
 .responsibility-white {
-  background-color: #fff;
+  top: -116px;
+  position: relative;
 
   &__wrapper {
     @include container();
     display: flex;
     justify-content: center;
-    //top: -116px;
-    //position: relative;
+
 
     .responsibility-white__inner {
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 1000px;
+      justify-content: space-between;
 
       .responsibility-white__content {
-        margin-bottom: 70px;
         position: relative;
         display: flex;
         justify-content: flex-end;
-        @include col-padding();
         @include size(8);
+
         .responsibility-white__image-block_left {
           left: 40px;
         }
+
         .responsibility-white__image-block_right {
           right: 0;
         }
+
         .responsibility-white__image-block {
           position: absolute;
           top: -65px;
@@ -50,7 +53,6 @@
         }
 
         .responsibility-white__text-content {
-          @include col-padding();
           @include size(7);
           background-color: #f6f8fa;
           display: flex;
@@ -77,8 +79,10 @@
           }
         }
       }
+
       .responsibility-white__content_flex-start {
         justify-content: flex-start;
+
         .responsibility-white__text-content {
           margin-left: 42px;
         }

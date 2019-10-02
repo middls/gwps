@@ -1,0 +1,26 @@
+mixin news(data)
+    +b('news', {t: 'section'})&attributes(attributes)
+        +e('wrapper')
+            +e('inner')
+                +e('title-block')
+                    +e('title', {t: 'h3'})= data.title
+                    +e('description', {t: 'p'})= data.description
+            +e('blocks-news')
+                +e('news')
+                    +e('image-block')
+                        +e('image')(alt="img" src="assets/images/content/news-img3.png")
+                    +e('text-block')
+                        +e('title-news', {t: 'span'}) Проект "Сила Сибири" на стадии завершения
+                        +e('date-news', {t: 'span'}) 14 декабря 2018
+                +e('news')
+                    +e('image-block')
+                        +e('image')(alt="img" src="assets/images/content/news-img2.png")
+                    +e('text-block')
+                        +e('title-news', {t: 'span'}) Началась реконструкция копрессорного цеха "Юбилейная" в Вологодской области
+                        +e('date-news', {t: 'span'}) 30 июля 2018
+                +e('news')
+                    +e('image-block')
+                        +e('image')(alt="img" src="assets/images/content/news-img1.png")
+                    +e('text-block')
+                        +e('title-news', {t: 'span'}) Стартовал конкурс "Лучший специалист компании" Краснодаргазстрой
+                        +e('date-news', {t: 'span'}) 23 марта 2018

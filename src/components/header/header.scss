@@ -16,16 +16,17 @@
         z-index: -1;
 
 	}
-	&__wrapper {
+
 		@include container();
 		& #{$self}__inner {
 			display: flex;
+			padding-left: 145px;
 			& #{$self}__content {
 				@include col-padding();
 				@include size(4);
 			}
 		}
-	}
+
 	.header__inner_flex-end{
 		justify-content: flex-end;
 	}
