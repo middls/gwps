@@ -3,10 +3,14 @@ import ready from "./tools/dom/ready";
 
 // Import Components
 import Slider from "../components/slider/slider";
+import Intersection from "../js/tools/intersection";
+import AOS from 'aos';
 // Factories class based plugins
 // Example
 // Accordion(".accordion");
 Slider(".slider");
+AOS.init();
+Intersection();
 // Simple functional plugins
 // Example
 // Demo();

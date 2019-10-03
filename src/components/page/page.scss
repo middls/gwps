@@ -1,5 +1,19 @@
 .page {
 	background-color: #003275;
+	.page__header {
+		position: relative;
+		&::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+		background: url("../images/content/header-bg.png") no-repeat;
+        width: 100%;
+        height: 700px;
+        z-index: -1;
+
+	}
+	}
 	.bg-white-main {
 		background-color: #fff;
 	}

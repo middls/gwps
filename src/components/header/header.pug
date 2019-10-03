@@ -1,16 +1,17 @@
 include ../headerTop/headerTop
-include ../button/button	
+include ../button/button
 
 
 mixin header(data)
-	+b('header')&attributes(attributes)
-		+headerTop(headerTop.default)
-		+button()
-		+e('inner')
-			+e('content', {m: 'first'})
-				+e('title', {t: 'h3', m: 'first'})= data.blockContent.title
-				+e('description', {t: 'span', m: 'first'})= data.blockContent.description
-		+e('inner', {m: 'flex-end'})
-			+e('content' , {m: 'second'})
-				+e('title', {t: 'h3'})= data.blockContentAnother.title
-				+e('description', {t: 'span'})= data.blockContentAnother.description
+    +b('header')&attributes(attributes)
+        +headerTop(headerTop.default)
+        +button()
+        +e('wrapper')
+            +e('inner')
+                +e('content', {m: 'first'})
+                    +e('title', {t: 'h3', m: 'first'})= data.blockContent.title
+                    +e('description', {t: 'span', m: 'first'})= data.blockContent.description
+            +e('inner' , {m: 'flex-end'})(data-aos="fade-right")
+                +e('content' , {m: 'second'})
+                    +e('title', {t: 'h3'})= data.blockContentAnother.title
+                    +e('description', {t: 'span'})= data.blockContentAnother.description

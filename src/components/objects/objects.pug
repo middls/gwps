@@ -5,10 +5,11 @@ mixin objects(data)
                 +e('title-block')
                     +e('title', {t: 'h3'})= data.title
                     +e('description', {t: 'p'})= data.description
-                +e('arrow-right')
-                    span Пресс-центр
-                    .arrow-black
-                        +e('arrow-bl', {t: 'image'})(src="assets/images/arrow-right1.png")
+                +b('arrow-right')
+                    +e('link', {t: 'a'})(href="#")
+                        span Все объекты
+                        .arrow-black
+                            +e('arrow-bl', {t: 'image'})(src="assets/images/arrow-right1.png")
         +e('full-wrapper')
             +e('object-content')
                 +e('text')
