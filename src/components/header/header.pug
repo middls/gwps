@@ -7,7 +7,7 @@ mixin header(data)
         +headerTop(headerTop.default)
         +button()
         +e('wrapper')
-            +e('inner')
+            +e('inner')(data-aos="fade-left")
                 +e('content', {m: 'first'})
                     +e('title', {t: 'h3', m: 'first'})= data.blockContent.title
                     +e('description', {t: 'span', m: 'first'})= data.blockContent.description

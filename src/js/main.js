@@ -10,7 +10,7 @@ import AOS from 'aos';
 // Accordion(".accordion");
 Slider(".slider");
 AOS.init();
-Intersection();
+// Intersection();
 // Simple functional plugins
 // Example
 // Demo();
