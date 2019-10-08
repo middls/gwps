@@ -1,18 +1,18 @@
 mixin headerTop(data)
 	+b('header-top')&attributes(attributes)
-		.container
-			.row
-				+e('left-side')
-					+e('wrapper', {m: 'flex-end'})
+		+e('wrapper')
+			+e('inner')
+				+b('left-side')
+					+e('content', {m: 'flex-end'})
 						+b('img-block')
 							+e('image')(alt="img" src="assets/images/kgs-logo.png" width="77")
-						+e('text', {t: 'span', m: 'start'})= data.kgsText
-				+e('right-side')
-					+e('wrapper')
+						+e('text', {m: 'start'})= data.kgsText
+				+b('right-side')
+					+e('content')
 						+b('img-block')
 							+e('image')(alt="img" src="assets/images/gazprom-logo.png" width="60")
-						+e('text', {t: 'span', m: 'block'})= data.gazpromTextAnother
-					+e('wrapper')
+						+e('text', {m: 'block'})= data.gazpromTextAnother
+					+e('content')
 						+b('img-block')
 							+e('image')(alt="img" src="assets/images/gazprom-logo.png" width="60")
-						+e('text', {t: 'span', m: 'block'})= data.gazpromText
+						+e('text', {m: 'block'})= data.gazpromText
