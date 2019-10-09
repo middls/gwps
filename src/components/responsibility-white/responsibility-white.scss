@@ -4,43 +4,51 @@
 
   &__wrapper {
     @include container();
-    display: flex;
-    justify-content: center;
-
 
     .responsibility-white__inner {
-      display: flex;
+      @include row-flex();
+      flex-wrap: nowrap;
       flex-direction: column;
       align-items: center;
       height: 1000px;
       justify-content: space-between;
 
-      .responsibility-white__content {
+      .content {
         position: relative;
         display: flex;
         justify-content: flex-end;
-        @include size(8);
+        @include col-padding();
+        @include size-xl(8);
+        @include size-lg(8);
+        @include size-md(9);
+        @include size-sm(9);
+        @include size-xs(10);
 
-        .responsibility-white__image-block_left {
+        .image-block_left {
           left: 40px;
         }
 
-        .responsibility-white__image-block_right {
+        .image-block_right {
           right: 0;
         }
 
-        .responsibility-white__image-block {
+        .image-block {
           position: absolute;
           top: -65px;
-          @include size(6);
+          @include col-padding();
+          @include size-xl(6);
+          @include size-lg(6);
+          @include size-md(6);
+          @include size-sm(9);
+          @include size-xs(10);
           max-width: 375px;
 
-          .responsibility-white__cont {
+          .image-block__cont {
             padding-top: 67.25%;
             position: relative;
             overflow: hidden;
 
-            .responsibility-white__image {
+            .image-block__image {
               position: absolute;
               top: 0;
               right: 0;
@@ -52,8 +60,13 @@
           }
         }
 
-        .responsibility-white__text-content {
-          @include size(7);
+        .content__text-content {
+          @include col-padding();
+          @include size-xl(7);
+          @include size-lg(7);
+          @include size-md(6);
+          @include size-sm(9);
+          @include size-xs(10);
           background-color: #f6f8fa;
           display: flex;
           flex-direction: column;
@@ -61,7 +74,7 @@
           align-items: center;
           padding: 60px 0;
 
-          .responsibility-white__title {
+          .content__title {
             @include col();
             @include size(7);
             margin-top: 0;
@@ -70,7 +83,7 @@
             font-weight: bold;
           }
 
-          .responsibility-white__description {
+          .content__description {
             @include col();
             @include size(7);
             margin: 0;
@@ -80,10 +93,10 @@
         }
       }
 
-      .responsibility-white__content_flex-start {
+      .content_flex-start {
         justify-content: flex-start;
 
-        .responsibility-white__text-content {
+        .content__text-content {
           margin-left: 42px;
         }
       }

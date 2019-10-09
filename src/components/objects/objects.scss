@@ -5,17 +5,18 @@
 
     .objects__inner {
       display: flex;
-      padding-left: 100px;
       justify-content: space-between;
 
       .arrow-right {
         display: flex;
         align-items: flex-end;
+
         &__link {
           display: flex;
           align-items: center;
           cursor: pointer;
         }
+
         span {
           color: #fff;
           font-size: 14px;
@@ -27,18 +28,23 @@
 
       .objects__title-block {
         @include col-padding();
-        @include size(6);
+        @include col-padding();
+        @include size-xl(6);
+        @include size-lg(6);
+        @include size-md(6);
+        @include size-sm(9);
+        @include size-xs(10);
 
         .objects__title {
           color: $white;
-          font-size: 56px;
+          font-size: 3.5rem;
           margin-top: 0;
           margin-bottom: 30px;
         }
 
         .objects__description {
           color: $white;
-          font-size: 16px;
+          font-size: 1rem;
           margin: 0;
         }
       }
@@ -51,7 +57,12 @@
     padding-top: 50px;
 
     .objects__object-content {
-      @include size(4);
+      @include col-padding();
+      @include size-xl(4);
+      @include size-lg(4);
+      @include size-md(4);
+      @include size-sm(9);
+      @include size-xs(10);
       position: relative;
       display: flex;
       flex-direction: column;
@@ -86,7 +97,12 @@
       }
 
       .objects__text {
-        @include size(6);
+        @include col-padding();
+        @include size-xl(6);
+        @include size-lg(6);
+        @include size-md(6);
+        @include size-sm(9);
+        @include size-xs(10);
         position: relative;
         display: flex;
         flex-direction: column;

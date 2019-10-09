@@ -4,8 +4,8 @@
   line-height: 1.3;
   color: $white;
 
-  &__wrapper {
-    @include container();
+  //&__wrapper {
+  //  @include container();
 
     .header-top__inner {
       @include row-flex();
@@ -13,7 +13,11 @@
 
       .left-side {
         @include col-padding();
-        @include size(3);
+        @include size-xl(3);
+        @include size-lg(3);
+        @include size-md(4);
+        @include size-sm(5);
+        @include size-xs(4);
 
         &__content {
           display: flex;
@@ -29,11 +33,14 @@
 
       .right-side {
         @include col-padding();
-        @include size(5);
+        @include size-xl(5);
+        @include size-lg(5);
+        @include size-md(5);
+        @include size-sm(6);
+        @include size-xs(7);
         display: flex;
         align-items: flex-start;
-        max-width: 36%;
-
+        justify-content: flex-end;
         &__content {
           display: flex;
           align-items: center;
@@ -44,7 +51,7 @@
         }
       }
     }
-  }
+  //}
 }
 
 

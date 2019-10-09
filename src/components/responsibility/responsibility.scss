@@ -1,39 +1,47 @@
 .responsibility {
   padding-bottom: 200px;
+
   &__wrapper {
     @include container();
 
     .responsibility__inner {
       display: flex;
       flex-direction: column;
-      padding-left: 145px;
 
       .responsibility__title-block {
         @include col-padding();
-        @include size(6);
+        @include size-xl(6);
+        @include size-lg(6);
+        @include size-md(6);
+        @include size-sm(9);
+        @include size-xs(10);
 
         .responsibility__title {
           color: $white;
-          font-size: 56px;
+          font-size: 3.5rem;
           margin-top: 0;
           margin-bottom: 30px;
         }
 
         .responsibility__description {
           color: $white;
-          font-size: 16px;
+          font-size: 1rem;
           margin: 0;
         }
       }
 
       .responsibility__blocks {
-        @include col-padding();
         padding-top: 30px;
         display: flex;
         justify-content: space-between;
 
         .responsibility__content-block {
-          @include size(3);
+          @include col-padding();
+          @include size-xl(3);
+          @include size-lg(3);
+          @include size-md(3);
+          @include size-sm(3);
+          @include size-xs(10);
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
@@ -46,12 +54,15 @@
             height: 100px;
             background-size: cover;
           }
+
           .responsibility__icon_first-icon {
             background: url("../images/icon-1.png") no-repeat 0 0;
           }
+
           .responsibility__icon_second-icon {
             background: url("../images/icon-2.png") no-repeat 0 0;
           }
+
           .responsibility__icon_third-icon {
             background: url("../images/icon-3.png") no-repeat 0 0;
           }

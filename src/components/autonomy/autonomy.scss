@@ -4,22 +4,26 @@
 
     .autonomy__inner {
       display: flex;
-      padding-left: 100px;
 
       .autonomy__title-block {
         @include col-padding();
-        @include size(6);
+        @include size-xl(6);
+        @include size-lg(6);
+        @include size-md(6);
+        @include size-sm(9);
+        @include size-xs(10);
+
 
         .autonomy__title {
           color: $white;
-          font-size: 56px;
+          font-size: 3.5rem;
           margin-top: 0;
           margin-bottom: 30px;
         }
 
         .autonomy__description {
           color: $white;
-          font-size: 16px;
+          font-size: 1rem;
           margin: 0;
         }
       }

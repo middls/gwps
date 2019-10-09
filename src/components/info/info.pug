@@ -2,19 +2,18 @@ mixin info(data)
     +b('info', {t: 'section'})&attributes(attributes)
         +e('wrapper')
             +e('inner')
-                +e('content', {m: 'm-l'})
-                    +e('image-block')
+                +b('content', {m: 'm-l'})
+                    +b('image-block')
                         +e('image')(alt="img" src="assets/images/content/info-img-1.jpg")
-                    +e('text-block', {m: 'right'})
+                    +b('text-block', {m: 'right'})
                         span 40
                         span регионов России
                         span работаем в условиях Крайнего Севера и жарких пустынь
                         span 9 стран
-            +e('inner', {m: 'flex-end'})
-                +e('content', {m: 'flex-end'})
-                    +e('image-block')
+                +b('content', {m: 'flex-end'})
+                    +b('image-block')
                         +e('image')(alt="img" src="assets/images/content/info-img-2.jpg")
-                    +e('text-block', {m: 'left'})
+                    +b('text-block', {m: 'left'})
                         span 7000
                         span сотрудников
                         span Огромный коллектив, который трудится, как единный, крепкий организм
