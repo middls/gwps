@@ -10,6 +10,7 @@
 
       .responsibility__title-block {
         @include col-padding();
+        @include size-hd(6);
         @include size-xl(6);
         @include size-lg(6);
         @include size-md(6);
@@ -37,6 +38,7 @@
 
         .responsibility__content-block {
           @include col-padding();
+          @include size-hd(3);
           @include size-xl(3);
           @include size-lg(3);
           @include size-md(3);

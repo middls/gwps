@@ -8,6 +8,7 @@
 
       .content {
         @include col();
+        @include size-hd(8);
         @include size-xl(8);
         @include size-lg(8);
         @include size-md(7);
@@ -53,6 +54,7 @@
 
         .text-block {
 			@include col();
+			@include size-hd(4);
 			@include size-xl(4);
 			@include size-lg(4);
 			@include size-md(5);
@@ -94,6 +96,7 @@
         }
 
         .text-block_left {
+			@include size-hd(5);
 			@include size-xl(5);
           left: 0;
           max-width: 37%;
