@@ -5,7 +5,7 @@ mixin responsibility(data)
                 +e('title-block')
                     +e('title', {t: 'h3'})= data.title
                     +e('description', {t: 'p'})= data.description
-                +e('blocks')
+                +e('blocks')(data-aos="fade-right")
                     +e('content-block')
                         +e('icon', {m: 'first-icon'})
                         +e('title-content-block', {t: 'span'}) охрана труда

@@ -2,7 +2,7 @@ mixin info(data)
     +b('info', {t: 'section'})&attributes(attributes)
         +e('wrapper')
             +e('inner')
-                +b('content', {m: 'm-l'})
+                +b('content', {m: 'm-l'})(data-aos="fade-right")
                     +b('image-block')
                         +e('image')(alt="img" src="assets/images/content/info-img-1.jpg")
                     +b('text-block', {m: 'right'})
@@ -10,7 +10,7 @@ mixin info(data)
                         span регионов России
                         span работаем в условиях Крайнего Севера и жарких пустынь
                         span 9 стран
-                +b('content', {m: 'flex-end'})
+                +b('content', {m: 'flex-end'})(data-aos="fade-left")
                     +b('image-block')
                         +e('image')(alt="img" src="assets/images/content/info-img-2.jpg")
                     +b('text-block', {m: 'left'})

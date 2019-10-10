@@ -16,6 +16,8 @@
       .content {
         position: relative;
         display: flex;
+        padding-left: 57px !important;
+        margin-bottom: 135px;
         justify-content: flex-end;
         @include col-padding();
         @include size-hd(8);
@@ -43,7 +45,6 @@
           @include size-md(6);
           @include size-sm(9);
           @include size-xs(10);
-          max-width: 375px;
 
           .image-block__cont {
             padding-top: 67.25%;
@@ -79,7 +80,12 @@
 
           .content__title {
             @include col();
-            @include size(7);
+            @include size-hd(7);
+            @include size-xl(7);
+            @include size-lg(7);
+            @include size-md(6);
+            @include size-sm(9);
+            @include size-xs(10);
             margin-top: 0;
             color: #000;
             font-size: 24px;
@@ -88,20 +94,20 @@
 
           .content__description {
             @include col();
-            @include size(7);
+            @include size-hd(7);
+            @include size-xl(7);
+            @include size-lg(7);
+            @include size-md(6);
+            @include size-sm(9);
+            @include size-xs(10);
             margin: 0;
             color: #000;
             font-size: 15px;
           }
         }
       }
-
-      .content__flex-start {
+      .content_flex-start {
         justify-content: flex-start;
-
-        .content__text-content {
-          margin-left: 42px;
-        }
       }
     }
   }

@@ -10,7 +10,7 @@ mixin news(data)
                         span Пресс-центр
                         .arrow-black
                             +e('arrow-bl', {t: 'image'})(src="assets/images/arrow-right2.png")
-            +e('blocks-news')
+            +e('blocks-news')(data-aos="fade-right")
                     +e('news')
                         +e('news-link', {t: 'a'})(href="#")
                             +e('image-block')
