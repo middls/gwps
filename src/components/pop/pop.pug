@@ -1,0 +1,11 @@
+mixin pop(data)
+    +b('pop', {t: 'section'})&attributes(attributes)
+        +e('wrapper')
+            +e('inner')
+                +b('content', {m: 'first'})(data-aos="fade-right")
+                    +e('title', {t: 'h3', m: 'first'})= data.blockContent.title
+                    +e('description', {t: 'span', m: 'first'})= data.blockContent.description
+                +b('content' , {m: 'second'})(data-aos="fade-left")
+                    +e('title', {t: 'h3'})= data.blockContentAnother.title
+                    +e('description', {t: 'span'})= data.blockContentAnother.description
+

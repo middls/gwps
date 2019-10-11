@@ -1,4 +1,5 @@
 .info {
+  overflow: hidden;
   &__wrapper {
     @include container();
 

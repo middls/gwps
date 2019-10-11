@@ -1,5 +1,6 @@
 extends ../layouts/default
 include ../components/header/header
+include ../components/pop/pop
 include  ../components/info/info
 include ../components/autonomy/autonomy
 include ../components/objects/objects
@@ -9,6 +10,9 @@ include ../components/news/news
 
 block header
 	+header(header.default)
+	.container
+		+button()
+	+pop(pop.default)
 
 block main
 	+info()
