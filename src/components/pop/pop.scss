@@ -18,7 +18,7 @@
         @include size-lg(3);
         @include size-md(3);
         @include size-sm(6);
-        @include size-xs(7);
+        @include size-xs(8);
         color: $white;
         line-height: 1.3;
 
@@ -46,31 +46,31 @@
       }
     }
   }
+}
 
-  @include to-sm() {
-    .pop {
-      &__wrapper {
-        .right-side {
-          @include size-xs(12);
-          display: flex;
-          justify-content: space-between;
-          font-size: 0.7rem;
-          line-height: 1.3;
-          color: $white;
+@include to-sm() {
+  .pop {
+    margin-top: 0;
+    .pop__inner {
+      padding: 0 15px;
+      .content {
 
-          &__content {
-            display: flex;
-            align-items: flex-end;
-
-            .img-block {
-              &__image {
-                width: 42px;
-              }
-            }
-          }
+        .content__title {
+          font-size: 1.8rem;
         }
+
+        .content__description {
+          font-size: 0.8rem;
+        }
+      }
+
+      .content_second {
+        margin-top: 50px;
+      }
+
+      .content_first {
+
       }
     }
   }
 }
-

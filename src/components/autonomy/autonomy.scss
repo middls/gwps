@@ -12,7 +12,7 @@
         @include size-lg(6);
         @include size-md(6);
         @include size-sm(9);
-        @include size-xs(10);
+        @include size-xs(12);
 
 
         .autonomy__title {
@@ -26,6 +26,23 @@
           color: $white;
           font-size: 1rem;
           margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@include to-sm() {
+  .autonomy {
+    &__wrapper {
+      .autonomy__inner {
+        .autonomy__title-block {
+          .autonomy__title {
+            font-size: 2.1rem;
+          }
+          .autonomy__description {
+            font-size: 0.8rem;
+          }
         }
       }
     }

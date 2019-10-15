@@ -11,10 +11,7 @@
     width: 100%;
     height: 700px;
     background: url(../images/content/header-bg.png) no-repeat;
-    //background-position: -160px 0;
-    //background-size: 200% 91%;
-    //background-position: -160px 0;
-    //background-size: 149% auto;
+
   }
 
   &__wrapper {
@@ -29,7 +26,6 @@
     .header {
       &__wrapper {
         .header__inner {
-          height: 54vh;
           justify-content: space-between;
           padding-left: 15px;
           padding-right: 15px;
@@ -52,3 +48,11 @@
   }
 }
 
+@include to-sm {
+  .header {
+    &::before {
+      background-position: -160px 0;
+      background-size: 200% 65%;
+    }
+  }
+}

@@ -5,11 +5,14 @@ import ready from "./tools/dom/ready";
 import Slider from "../components/slider/slider";
 import Intersection from "../js/tools/intersection";
 import AOS from 'aos';
+
+import Responsibility from '../components/responsibility/responsibility';
 // Factories class based plugins
 // Example
 // Accordion(".accordion");
 Slider(".slider");
 AOS.init();
+Responsibility('.responsibility');
 // Intersection();
 // Simple functional plugins
 // Example

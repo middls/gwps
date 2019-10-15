@@ -15,7 +15,7 @@
         @include size-lg(6);
         @include size-md(6);
         @include size-sm(9);
-        @include size-xs(10);
+        @include size-xs(12);
 
         .responsibility__title {
           color: $white;
@@ -78,6 +78,22 @@
           .responsibility__description-content-block {
             color: $white;
             font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@include to-sm() {
+  .responsibility {
+    &__wrapper {
+      .responsibility__inner {
+        .responsibility__title-block {
+          .responsibility__title {
+            font-size: 2.1rem;
+          }
+          .responsibility__description {
+            font-size: 0.8rem;
           }
         }
       }

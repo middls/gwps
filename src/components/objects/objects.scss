@@ -64,7 +64,7 @@
       @include size-lg(4);
       @include size-md(4);
       @include size-sm(9);
-      @include size-xs(10);
+      @include size-xs(11);
       position: relative;
       display: flex;
       flex-direction: column;
@@ -137,6 +137,39 @@
             font-size: 13px;
             line-height: 1.5;
           }
+        }
+      }
+    }
+  }
+}
+
+@include to-sm() {
+  .objects {
+    &__wrapper {
+      .objects__inner {
+        .arrow-right {
+          display: none;
+        }
+        .objects__title-block {
+          .objects__title {
+            font-size: 2.1rem;
+          }
+          .objects__description {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .objects__full-wrapper {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      .objects__object-content {
+        height: 350px;
+        margin-bottom: 20px;
+        .objects__text {
+          min-height: 170px;
+          margin-bottom: 20px;
         }
       }
     }
